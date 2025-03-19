@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <header>
+    <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+  </header>
+  <body>
+    <section class="projects">
+      <div class="form">
+        <h2>Adicionar Projeto</h2>
+        <button  id="showForm"  onclick="openForm('enviar')">Enviar Projeto</button>
+        <button  id="hideForm"  onclick="closeForm()">Cancelar</button>
+        <div id="contentForm">
+        </div>
+      </div>
+      <div class="list">
+        <h1>Projetos</h1>
+        <button id="loadingProjects" onclick="getProjects()">Carregar Projetos</button>
+        <button id="hideProjects" onclick="hideProjects()">Esconder Projetos</button>
+        <ul id="projectsList"></ul>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
