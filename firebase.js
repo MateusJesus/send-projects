@@ -3,12 +3,12 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/11.8.0/firebase
 import { getAuth } from "https://www.gstatic.com/firebasejs/11.8.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBaMZtAJe4TweCiHdNO3EY0xQaVe0DpBgA",
-  authDomain: "portfolio-api-2cd53.firebaseapp.com",
-  projectId: "portfolio-api-2cd53",
-  storageBucket: "portfolio-api-2cd53.appspot.com",
-  messagingSenderId: "610006847390",
-  appId: "1:610006847390:web:a5c932a4482f0a7360508f",
+  apiKey: window.env.FIREBASE_API_KEY,
+  authDomain: window.env.FIREBASE_AUTH_DOMAIN,
+  projectId: window.env.FIREBASE_PROJECT_ID,
+  storageBucket: window.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: window.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: window.env.FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
