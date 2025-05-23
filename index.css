@@ -8,11 +8,11 @@ body {
   padding: 0;
 }
 
-#hideProjects{
+#hideProjects {
   display: none;
 }
 
-#hideForm{
+#hideForm {
   display: none;
 }
 
@@ -37,7 +37,6 @@ body {
   flex-direction: column;
   width: 400px;
 }
-
 /* Títulos */
 h1,
 h2 {
@@ -70,7 +69,6 @@ button:active {
 /* Inputs e textarea */
 input,
 textarea {
-  resize: none;
   width: 300px;
   background-color: #2d2d2d;
   display: block;
@@ -80,6 +78,12 @@ textarea {
   border-radius: 5px;
   color: #f4f4f4;
   transition: border 0.3s;
+}
+
+textarea {
+  max-height: 200px;
+  min-height: 100px;
+  resize: vertical;
 }
 
 input:focus,
@@ -96,21 +100,26 @@ ul {
 }
 
 li {
-  line-height: 1px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: initial;
   justify-content: space-between;
   background: #292929;
-  padding: 5px 20px;
-  gap: 1em;
-  margin-top: 2px;
+  padding: 20px 20px;
+  gap: 0.5em;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s;
-
   button {
     padding: 5px 10px;
   }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
 li:hover {
@@ -148,7 +157,7 @@ li:hover {
   border: 1px solid #ccc;
 }
 
-.light-mode li{
+.light-mode li {
   background-color: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   color: #121212;
