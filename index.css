@@ -8,6 +8,12 @@ body {
   padding: 0;
 }
 
+.logo{
+  img{
+    height: 40px;
+  }
+}
+
 #hideProjects {
   display: none;
 }
